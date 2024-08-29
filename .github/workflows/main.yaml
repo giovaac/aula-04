@@ -7,7 +7,7 @@ jobs:
                 runs-on: ubuntu-latest
                 steps: 
                       - name: passo 1
-                      - uses: actions/checkout@v4
+                        uses: actions/checkout@v4
                       - name: passo 2
                         run: | 
                                 "$(cat READ_ME.md)"
@@ -16,7 +16,7 @@ jobs:
                 runs-on: windows-latest
                 steps:
                       - name: passo 1
-                      - uses: actions/checkout@v4
+                        uses: actions/checkout@v4
                       - name: passo 2
                         run: "Get-CimInstance Win32_OperatingSystem"
       
