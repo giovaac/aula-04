@@ -1,0 +1,15 @@
+name : JobLinux
+
+on: push
+
+jobs: 
+  job-linux: 
+
+    runs-on: ubuntu-latest
+
+    steps: 
+    - uses: actions/checkout@v3
+    - name: File data and version
+      run: | 
+        "cat READ_ME.md"
+        uname -a
