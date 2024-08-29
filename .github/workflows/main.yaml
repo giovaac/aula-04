@@ -1,6 +1,9 @@
 name : JobLinux
 
-on: push
+on: 
+      push:
+            branches:
+                  - feature new
 
 jobs: 
       job-linux: 
