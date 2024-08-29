@@ -4,12 +4,19 @@ on: push
 
 jobs: 
   job-linux: 
-
     runs-on: ubuntu-latest
-
     steps: 
-    - uses: actions/checkout@v3
-    - name: File data and version
+    - name: passo 1
+    - uses: actions/checkout@v4
+    - name: passo 2
       run: | 
-        "cat READ_ME.md"
+        "$(cat READ_ME.md)"
         uname -a
+  job-01:
+    runs-on: windows-latest
+    steps:
+    - name: passo 1
+    - uses: actions/checkout@v4
+    - name: passo 2
+      run: "Get-CimInstance Win32_OperatingSystem"
+      
