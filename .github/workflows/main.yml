@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: passo 2
       run: | 
-        "$(cat READ_ME.md)"
-        uname -a
+              "$(cat READ_ME.md)"
+              uname -a
   job-01:
     runs-on: windows-latest
     steps:
