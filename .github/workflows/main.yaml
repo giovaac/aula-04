@@ -4,7 +4,10 @@ on:
       push:
             branches:
                   - feature new
-
+      workflow_dispatch:
+      schedule:
+            - cron: '0 4 * * 0'
+            
 jobs: 
       job-linux: 
                 runs-on: ubuntu-latest
